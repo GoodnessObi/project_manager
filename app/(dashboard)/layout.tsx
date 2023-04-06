@@ -1,6 +1,6 @@
 import GlassPane from '@/components/GlassPane';
+import Sidebar from '@/components/SIdebar';
 import '@/styles/global.css';
-import { Sidebar } from 'react-feather';
 
 export const metadata = {
 	title: 'Project App',
@@ -15,9 +15,9 @@ export default function DashboardRootLayout({
 	return (
 		<html lang='en'>
 			<body className='h-screen w-screen rainbow-mesh p-6'>
-				<GlassPane className='w-full h-full flex items-center justify-center'>
+				<GlassPane className='w-full h-full flex'>
 					<Sidebar />
-					<main>{children}</main>
+					<main className='w-full'> {children}</main>
 				</GlassPane>
 			</body>
 		</html>
