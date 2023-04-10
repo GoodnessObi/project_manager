@@ -6,7 +6,7 @@ import { cookies } from 'next/headers';
 const getData = async (id) => {
 	const user = await getUserFromCookie(cookies());
 	const project = await db.project.findFirst({
-		where: { id, ownerId: user.id },
+		where: { id, ownerId: user?.id },
 		include: {
 			tasks: true,
 		},
