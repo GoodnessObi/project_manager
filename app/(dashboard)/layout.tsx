@@ -15,7 +15,7 @@ export default function DashboardRootLayout({
 	return (
 		<html lang='en'>
 			<body className='h-screen w-screen rainbow-mesh p-6'>
-				<GlassPane className='w-full h-full flex'>
+				<GlassPane className='w-full h-full flex p-3 space-x-3'>
 					<Sidebar />
 					<main className='w-full'> {children}</main>
 				</GlassPane>
